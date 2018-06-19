@@ -48,7 +48,7 @@ package com.example.android.quakereport;
 public class EarthquakeActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<ArrayList<Earthquake>>{
 
 //    public static final String LOG_TAG = EarthquakeActivity.class.getName();
-private static final String SAMPLE_JSON_RESPONSE = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=6&limit=10";
+private static final String SAMPLE_JSON_RESPONSES = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=6&limit=10";
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
      * This really only comes into play if you're using multiple loaders.
@@ -104,7 +104,7 @@ private static final String SAMPLE_JSON_RESPONSE = "https://earthquake.usgs.gov/
 
 
 
-        return new EarthQuakeLoader(this, SAMPLE_JSON_RESPONSE);
+        return new EarthQuakeLoader(this, SAMPLE_JSON_RESPONSES);
 
     }
 
